@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light" />
+  <title>Local SEO Assistant — Thai Modern Bags</title>
+  <style>
+    :root{--paper:#f5f6f1;--white:#fff;--ink:#1d3029;--muted:#66736a;--green:#28513f;--line:#dfe5dc;--lime:#e4edc9;--shadow:0 18px 55px #20392c0c}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.65 system-ui,-apple-system,Segoe UI,sans-serif}header{background:var(--green);color:white;padding:20px max(24px,calc((100% - 1080px)/2));display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{font-size:12px;letter-spacing:.14em;font-weight:750}.local{font-size:11px;color:#d9e4d8;border:1px solid #ffffff42;border-radius:30px;padding:6px 11px}.wrap{max-width:1080px;margin:54px auto;padding:0 24px}.kicker{text-transform:uppercase;letter-spacing:.15em;font-size:10px;font-weight:700;color:#71845e}.intro{max-width:720px}.intro h1{font-size:clamp(34px,5vw,52px);line-height:1.08;letter-spacing:-.055em;font-weight:600;margin:12px 0}.intro p{color:var(--muted);max-width:650px}.notice{border-left:3px solid #9cb56a;background:#eef2e8;padding:14px 17px;margin:24px 0 30px;font-size:12px;color:#52614f}.layout{display:grid;grid-template-columns:1fr .92fr;gap:24px;align-items:start}.panel{background:var(--white);border:1px solid var(--line);box-shadow:var(--shadow);border-radius:10px;padding:25px}.panel h2{font-size:17px;margin:0 0 4px;letter-spacing:-.02em}.panel .sub{font-size:12px;color:var(--muted);margin:0 0 18px}label{display:block;font-size:12px;font-weight:650;margin:17px 0 7px}textarea,input{width:100%;border:1px solid #cfd8ce;border-radius:6px;padding:12px;font:inherit;font-size:13px;line-height:1.6;color:var(--ink);background:#fdfdfb;outline:none}textarea:focus,input:focus{border-color:#72915d;box-shadow:0 0 0 3px #dbe7cb}textarea{min-height:164px;resize:vertical}input{min-height:45px}.hint{font-size:10px;color:#778277;margin-top:6px}.button{margin-top:19px;border:0;border-radius:5px;background:var(--green);color:white;padding:13px 18px;font:inherit;font-size:12px;font-weight:600;cursor:pointer;display:flex;justify-content:space-between;align-items:center;width:100%;transition:background .2s}.button:hover{background:#193c2e}.button:disabled{opacity:.62;cursor:wait}.status{font-size:11px;color:var(--muted);min-height:20px;margin:11px 0 0}.results{min-height:380px}.empty{height:100%;min-height:300px;display:grid;place-content:center;text-align:center;color:#7d887d;padding:30px}.empty b{font-size:34px;color:#a9b69b;font-weight:400}.empty span{font-size:12px;max-width:250px}.result-block{border-top:1px solid var(--line);padding:15px 0}.result-block:first-of-type{border-top:0;padding-top:0}.result-block h3{font-size:12px;margin:0 0 8px}.result-block p{margin:0;font-size:12px;color:#4f5c53;white-space:pre-wrap}.result-block ul{margin:0;padding-left:17px;font-size:12px;color:#4f5c53}.result-block li+li{margin-top:7px}.meta-copy{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}.copy{border:1px solid var(--line);background:white;color:var(--green);border-radius:4px;padding:5px 8px;font-size:10px;cursor:pointer;white-space:nowrap}.tag{display:inline-block;background:#f0f3eb;color:#536847;border-radius:20px;padding:4px 8px;font-size:10px;margin:3px}.footnote{text-align:center;color:#818c82;font-size:10px;margin:25px 0 10px}footer{max-width:1080px;margin:0 auto;padding:0 24px 30px;color:#899188;font-size:10px}code{font-family:ui-monospace,SFMono-Regular,monospace;background:#eef0ea;padding:2px 5px;border-radius:3px}@media(max-width:780px){.wrap{margin:36px auto}.layout{grid-template-columns:1fr}.results{min-height:250px}.empty{min-height:200px}header{padding:16px 22px}.panel{padding:20px}}
+  </style>
+</head>
+<body>
+  <header><span class="brand">THAI MODERN BAGS <span style="font-weight:400;opacity:.7">/ LOCAL SEO WORKSPACE</span></span><span class="local">● Runs on this computer</span></header>
+  <main class="wrap">
+    <div class="intro">
+      <span class="kicker">A private writing assistant</span>
+      <h1>Make your real expertise easier to find.</h1>
+      <p>Use local Ollama to review the current website copy and create SEO and E-E-A-T suggestions grounded in the facts you provide. Nothing is published automatically.</p>
+    </div>
+    <div class="notice"><strong>Keep it honest:</strong> Google visibility cannot be guaranteed. E-E-A-T is demonstrated through real experience, expertise, authoritativeness, and trust—not AI-written claims. Verify every suggestion and add first-hand evidence before publishing.</div>
+    <div class="layout">
+      <section class="panel" aria-labelledby="input-title">
+        <h2 id="input-title">Give the assistant true details</h2>
+        <p class="sub">More specific, verifiable facts lead to more useful recommendations.</p>
+        <form id="draft-form">
+          <label for="facts">Business facts and proof points</label>
+          <textarea id="facts" required minlength="20" maxlength="10000" placeholder="For example: What bags do you actually make? Who is on the team, and what hands-on experience do they have? Which materials and processes can you verify? What countries or regions do you serve? What photos, customer feedback, case studies, or business details can you publish? Leave unknown details out."></textarea>
+          <div class="hint">Do not include private customer information or credentials. The tool sends these notes only to your local Ollama service.</div>
+          <label for="goal">What should this page help with?</label>
+          <input id="goal" maxlength="500" placeholder="e.g. Help retail brands understand our custom bag process" />
+          <button class="button" id="submit" type="submit"><span>Generate review &amp; draft ideas</span><span aria-hidden="true">↗</span></button>
+          <p class="status" id="status" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+      <section class="panel results" aria-labelledby="results-title">
+        <h2 id="results-title">Review your suggestions</h2>
+        <p class="sub" id="model-label">Drafts appear here for you to review.</p>
+        <div id="output" class="empty"><b>✳</b><span>Add real business facts, then generate a review. Nothing changes on the live site.</span></div>
+      </section>
+    </div>
+    <p class="footnote">This helper reads the current homepage copy and sends it with your notes to Ollama at <code>127.0.0.1:11434</code>. It does not publish, edit files, or send data to a cloud AI provider.</p>
+  </main>
+  <footer>Local SEO workspace · Close the terminal running the helper to stop it.</footer>
+  <script>
+    const form = document.querySelector('#draft-form');
+    const button = document.querySelector('#submit');
+    const status = document.querySelector('#status');
+    const output = document.querySelector('#output');
+    const label = document.querySelector('#model-label');
+    const sections = [
+      ['Meta title', 'metaTitle', 'copy'],
+      ['Meta description', 'metaDescription', 'copy'],
+      ['Main topic', 'primaryTopic', 'text'],
+      ['Page improvements', 'pageImprovements', 'objects'],
+      ['E-E-A-T actions', 'eeatActions', 'list'],
+      ['Facts to verify', 'factsToVerify', 'list'],
+      ['First-hand content ideas', 'contentIdeas', 'list'],
+      ['Structured data', 'structuredData', 'objects']
+    ];
+    function addText(parent, text, className) {
+      const p = document.createElement('p');
+      p.textContent = text || 'No suggestion returned.';
+      if (className) p.className = className;
+      parent.appendChild(p);
+      return p;
+    }
+    function render(data) {
+      output.className = '';
+      output.replaceChildren();
+      for (const [heading, key, type] of sections) {
+        const value = data[key];
+        if (value == null || (Array.isArray(value) && !value.length)) continue;
+        const block = document.createElement('section');
+        block.className = 'result-block';
+        const h = document.createElement('h3');
+        h.textContent = heading;
+        block.appendChild(h);
+        if (type === 'copy') {
+          const row = document.createElement('div');
+          row.className = 'meta-copy';
+          addText(row, String(value));
+          const copy = document.createElement('button');
+          copy.type = 'button';
+          copy.className = 'copy';
+          copy.textContent = 'Copy';
+          copy.addEventListener('click', async () => {
+            try { await navigator.clipboard.writeText(String(value)); copy.textContent = 'Copied'; setTimeout(() => copy.textContent = 'Copy', 1200); }
+            catch { copy.textContent = 'Select text'; }
+          });
+          row.appendChild(copy);
+          block.appendChild(row);
+        } else if (type === 'list' || type === 'objects') {
+          const ul = document.createElement('ul');
+          for (const item of (Array.isArray(value) ? value : [value])) {
+            const li = document.createElement('li');
+            li.textContent = typeof item === 'string' ? item : [item.title || item.type, item.reason || item.note].filter(Boolean).join(' — ');
+            ul.appendChild(li);
+          }
+          block.appendChild(ul);
+        } else {
+          addText(block, String(value));
+        }
+        output.appendChild(block);
+      }
+    }
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      button.disabled = true;
+      status.textContent = 'Asking your local model… this may take a minute.';
+      try {
+        const response = await fetch('/api/draft', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({businessFacts: document.querySelector('#facts').value, goal: document.querySelector('#goal').value})
+        });
+        const payload = await response.json();
+        if (!response.ok) throw new Error(payload.error || 'Could not generate suggestions.');
+        render(payload.result || {});
+        label.textContent = `Draft suggestions from local model: ${payload.model}. Review before use.`;
+        status.textContent = 'Review each item, confirm facts, and make edits yourself before publishing.';
+      } catch (error) {
+        status.textContent = error.message || 'Something went wrong. Check that Ollama is running and the model is installed.';
+      } finally {
+        button.disabled = false;
+      }
+    });
+  </script>
+</body>
+</html>
